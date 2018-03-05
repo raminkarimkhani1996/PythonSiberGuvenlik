@@ -16,6 +16,7 @@ try:
 				print(ip+" [-]") #Eğer ping başarısız ise 'IP [-]' çıktısı alınacaktır.
 	else:
 		print("İlk IP değeri son IP değerinden büyük olmalıdır veya ilk ve son IP değerleri 0-255 aralığında olmalıdır.")
+		exit()
 except ValueError: #Tarama için girişleri düzgün yapmak hassas bir konudur. Bu nedenle oluşabilecek bir değer hatası sonucu kullanıcıya düzgün bir çıktı vermek için 'except ValueError:' bloğunu kullandık.
 	print("Hatalı giriş yaptınız")
 print("Aktif IP'ler")
